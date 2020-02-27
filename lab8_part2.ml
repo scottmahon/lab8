@@ -144,7 +144,7 @@ values as strings of the form:
 where N is the int, and S is the string. For instance, a stack with
 two elements might be serialized as the string
 
-    "(1, 'pushed first'):(2, 'pushed second')"     .
+    "(1,'pushed first'):(2,'pushed second')"
 
 For this oversimplified serialization function, you may assume that
 the string will be made up of alphanumeric characters only.
