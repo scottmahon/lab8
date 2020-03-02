@@ -142,6 +142,9 @@ struct
   let serialize = string_of_int 
    end ;;
 
+module IntStack : (STACK with type element = IntSerialize.t) = 
+ MakeStack(IntSerialize) ;;
+
 (*......................................................................
 Exercise 1C: Make a module `IntStringStack` that creates a stack whose
 elements are `int * string` pairs. Its serialize function should output
